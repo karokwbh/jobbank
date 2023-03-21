@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # 舊式寫法
+  get '/about', controller: 'pages', action: 'about'
+  # 新式寫法
+  get '/contact', to: 'pages#contact'
 end
