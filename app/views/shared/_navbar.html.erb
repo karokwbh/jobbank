@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <%# <a href="/">LOGO</a> %>
+  <%= link_to 'LOGO', root_path %>
+  <%# link_to = View 助理 = View Helper = Helper %>
+
+  <ul>
+    <%# <li><a href="/about">關於</a></li>
+    <li><a href="/contact">聯絡</a></li> %>
+    <%# about_path 會轉成'/about' %>
+    <li><%= link_to '新增履歷', new_resume_path %></li>
+    <li><%= link_to '關於', about_path %></li>
+    <li><%= link_to '聯絡', contact_path %></li>
+  </ul>
+</nav>
